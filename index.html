@@ -63,7 +63,10 @@
 					width:89%;
                 }
             }		
-
+            .portfolio-wrapper img{
+                width: 300px;
+                height: 120px;
+            }
         </style>
 
     </head>
@@ -111,15 +114,15 @@
                                 
          <div class="image-holder one" id="pic_prof_1" style="display:block">
         
-                <img class="head-image up circle" src="images/img/up.png" width="150" height="150" alt="" />
-                <img class="head-image up-left circle" src="images/img/upleft.png" width="150" height="150" alt="" />
+                <img class="head-image up circle" src="images/img/up.jpg" width="150" height="150" alt="" />
+                <!-- <img class="head-image up-left circle" src="images/img/upleft.png" width="150" height="150" alt="" />
                 <img class="head-image left circle" src="images/img/left.png" width="150" height="150" alt="" />
                 <img class="head-image down-left circle" src="images/img/downleft.png" width="150" height="150" alt="" />
                 <img class="head-image down circle" src="images/img/down.png" width="150" height="150" alt="" />
                 <img class="head-image down-right circle" src="images/img/downright.png" width="150" height="150" alt="" />
                 <img class="head-image right circle" src="images/img/right.png" width="150" height="150" alt="" />
                 <img class="head-image up-right circle" src="images/img/upright.png" width="150" height="150" alt="" />
-                <img class="head-image front circle" src="images/img/front.png" width="150" height="150" alt="" />
+                <img class="head-image front circle" src="images/img/front.png" width="150" height="150" alt="" /> -->
                 
         </div>
         
@@ -178,37 +181,33 @@
 
     <ul class="resp-tabs-list">
         <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">			
-            <span class="tite-list">profile</span>
+            <span class="tite-list">关于我</span>
             <i class="fa fa-user icon_menu icon_menu_active"></i>
         </li>
 
         <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume"> 
-            <span class="tite-list">resume</span>
+            <span class="tite-list">简历</span>
             <i class="fa fa-tasks icon_menu"></i>
         </li>
 
         <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="portfolio"> 
-            <span class="tite-list">portfolio</span>
+            <span class="tite-list">相册</span>
             <i class="fa fa-briefcase icon_menu"></i>
         </li>
 
         <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="blog">
-            <span class="tite-list">blog</span>
+            <span class="tite-list">博客</span>
             <i class="fa fa-bullhorn icon_menu"></i>
         </li>
 
         <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;"> 
-            <span class="tite-list">contact</span>
+            <span class="tite-list">联系</span>
             <i class="fa fa-envelope icon_menu"></i> 
         </li>
-
-        <a href="#" id="print"><i class="fa fa-print icon_print"></i> </a>
-        <a href="#" id="downlowd"><i class="fa fa-download icon_print"></i> </a>
+        <a href="person.pdf" id="print" onclick="btnPrintClick()" ><i class="fa fa-print icon_print" ></i> </a>
+        <a href="person.pdf" id="downlowd" download="downlowd.pdf"><i class="fa fa-download icon_print"></i></a>
     </ul>
-    <!-- /resp-tabs-list -->
-
-
-
+    <!-- /resp-tabs-list -->  
     <!-- resp-tabs-container --> 
     <div class="resp-tabs-container">
 
@@ -797,7 +796,7 @@
         <ul id="filters" class="clearfix">
             <li><span class="filter active" data-filter="catWeb catGraphic catMotion logo">所有</span></li>
             <li><span class="filter" data-filter="catWeb">风景</span></li>
-            <li><span class="filter" data-filter="catGraphic">人物</span></li>
+            <li><span class="filter" data-filter="catGraphic">旧事</span></li>
             <li><span class="filter" data-filter="catMotion">那些年</span></li>
             <li><span class="filter" data-filter="logo">奔跑</span></li>
         </ul>
@@ -810,12 +809,12 @@
             <div class="portfolio logo" data-cat="logo">	
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">		
-                    <a href="images/portfolio/1.jpg" rel="portfolio" title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet">
-                        <img src="images/portfolio/1.jpg" alt="Visual Infography" />
+                    <a href="images/portfolio/1.jpg" rel="portfolio" title="夕阳无限好，只是近黄昏">
+                        <img src="images/portfolio/1.jpg" alt="夕阳风景" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">夕阳</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -831,13 +830,13 @@
             <div class="portfolio catWeb" data-cat="catWeb">	
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">		
-                    <a href="http://www.youtube.com/watch?v=c9MnSeYYtYY" rel="portfolio">
-
-                        <img src="images/portfolio/2.jpg" alt="Visual Infography" />
+                    <!-- <a href="http://www.youtube.com/watch?v=c9MnSeYYtYY" rel="portfolio"> -->
+                    <a href="images/portfolio/2.jpg" rel="portfolio" title="志像山一样高，心像水一样静">
+                        <img src="images/portfolio/2.jpg" alt="富士山下" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web Design</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">富士山</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -851,12 +850,12 @@
             <div class="portfolio catWeb" data-cat="catWeb">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">			
-                    <a href="images/portfolio/3.jpg" rel="portfolio">
-                        <img src="images/portfolio/3.jpg" alt="Sonor's Design" />
+                    <a href="images/portfolio/3.jpg" rel="portfolio" title="寒风萧瑟，但抵不住那丰硕的喜悦">
+                        <img src="images/portfolio/3.jpg" alt="寒秋" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web design</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">寒秋</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -870,12 +869,12 @@
             <div class="portfolio catMotion" data-cat="catMotion">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">			
-                    <a href="images/portfolio/4.jpg" rel="portfolio">
-                        <img src="images/portfolio/4.jpg" alt="Typography Company" />
+                    <a href="images/portfolio/4.jpg" rel="portfolio" title="徜徉在代码的世界，犹如鱼儿在水中嬉戏一般">
+                        <img src="images/portfolio/4.jpg" alt="代码世界" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Motion Graphic</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">代码世界</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -889,12 +888,12 @@
             <div class="portfolio catWeb" data-cat="catWeb">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">
-                    <a href="images/portfolio/5.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
-                        <img src="images/portfolio/5.jpg" alt="Weatherette" />
+                    <a href="images/portfolio/5.jpg" title="冰封世界，似水一般温柔，融化" rel="portfolio">
+                        <img src="images/portfolio/5.jpg" alt="冰封" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web Design</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">冰封</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -908,12 +907,12 @@
             <div class="portfolio catMotion" data-cat="catMotion">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">		
-                    <a href="images/portfolio/6.jpg" rel="portfolio">				
-                        <img src="images/portfolio/6.jpg" alt="BMF" />
+                    <a href="images/portfolio/6.jpg" rel="portfolio" title="蓝天白云，我向往的自由">				
+                        <img src="images/portfolio/6.jpg" alt="蓝天白云" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Motion Graphic</span>
+                                <a class="text-title"> Name</a>
+                                <span class="text-category">白云</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -927,12 +926,12 @@
             <div class="portfolio catGraphic" data-cat="catGraphic">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">		
-                    <a href="images/portfolio/7.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">				
-                        <img src="images/portfolio/7.jpg" alt="Techlion" />
+                    <a href="images/portfolio/7.jpg" title="站高山之巅，思人生犹如曲折的河流，不可畏惧，踏过去，一马平川" rel="portfolio">		
+                        <img src="images/portfolio/7.jpg" alt="平川" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Graphic Design</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">一马平川</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -946,12 +945,12 @@
             <div class="portfolio logo" data-cat="logo">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">		
-                    <a href="images/portfolio/8.jpg" rel="portfolio" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien.">
-                        <img src="images/portfolio/8.jpg" alt="KittyPic" />
+                    <a href="images/portfolio/13.jpg" rel="portfolio" title="生命不息，奋斗不止，奔跑吧">
+                        <img src="images/portfolio/13.jpg" alt="奔跑" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">奔跑</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -965,12 +964,12 @@
             <div class="portfolio catWeb" data-cat="catWeb">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">			
-                    <a href="images/portfolio/9.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
-                        <img src="images/portfolio/9.jpg" alt="Graph Plotting" />
+                    <a href="images/portfolio/9.png"  rel="portfolio">
+                        <img src="images/portfolio/9.png" alt="励志" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web Design</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">励志</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -984,12 +983,12 @@
             <div class="portfolio catGraphic" data-cat="catGraphic">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">	
-                    <a href="images/portfolio/10.jpg" rel="portfolio">
-                        <img src="images/portfolio/10.jpg" alt="QR Quick Response" />
+                    <a href="images/portfolio/10.jpeg" rel="portfolio">
+                        <img src="images/portfolio/10.jpeg" alt="坚持" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Graphic Design</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">坚持</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -1003,12 +1002,12 @@
             <div class="portfolio logo" data-cat="logo">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">	
-                    <a href="images/portfolio/11.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
-                        <img src="images/portfolio/11.jpg" alt="Mobi Sock" />
+                    <a href="images/portfolio/11.jpg" title="为自己充能，人生变得不同" rel="portfolio">
+                        <img src="images/portfolio/11.jpg" alt="正能量" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">正能量</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -1022,12 +1021,12 @@
             <div class="portfolio logo" data-cat="logo">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">
-                    <a href="images/portfolio/12.jpg" rel="portfolio">
-                        <img src="images/portfolio/12.jpg" alt="Village Community Church" />
+                    <a href="images/portfolio/12.jpg" rel="portfolio" title="起跑线上不一定比别人好，但中间过程的努力，将会决定谁将跑道终点">
+                        <img src="images/portfolio/12.jpg" alt="跑道" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
+                                <a class="text-title">Name</a>
+                                <span class="text-category">跑道</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -2155,9 +2154,9 @@
 
         <!-- Switcher -->
         <div id="custumize-style">
-            <h2>Style Selector<a href="#" class="switcher"><i class="fa fa-cogs icon-switcher"></i></a></h2>
+            <h2>选择器<a href="#" class="switcher"><i class="fa fa-cogs icon-switcher"></i></a></h2>
             <div>
-                <h3>Theme Color</h3>
+                <h3>主题颜色</h3>
                 <ul class="colors-style" id="color1">
 
                     <li><a href="#" class="gray"></a></li>
@@ -2176,41 +2175,41 @@
             </div>
             <div> 
 
-                <h3 class="layouts">Profile Image</h3>
+                <h3 class="layouts">档案图片</h3>
                 <div id="show">
 
                     <div class="clean-check">
 
                         <input type="radio" id="r1" name="style_profile" value="style_profile_1" checked="checked" />
-                        <label for="r1"><span></span>Rotating image</label>
+                        <label for="r1"><span></span>旋转图像</label>
 
                         <input type="radio" id="r2" name="style_profile" value="style_profile_2" />
-                        <label for="r2"><span></span>Fixed image</label>
+                        <label for="r2"><span></span>固定图像</label>
 
                     </div>
                 </div>
 
 
                 
-                <h3 class="layouts">Page Builder</h3>
+                <h3 class="layouts">页面生成器</h3>
                 <div id="show">
                     <div class="clean-check" style="padding-left: 30px;">
 
                         <input type="radio" id="pb1" name="page_builder" value="http://demo.flexy-codes.com/FlexyVcard"  checked />
-                        <label for="pb1"><span></span>Style 1</label>
+                        <label for="pb1"><span></span>风格1</label>
 
                         <input type="radio" id="pb2" name="page_builder" value="page-builder-2.html"  />
-                        <label for="pb2"><span></span>Style 2</label>
+                        <label for="pb2"><span></span>风格2</label>
 
                         <input type="radio" id="pb3" name="page_builder" value="page-builder-3.html"  />
-                        <label for="pb3"><span></span>Style 3</label>
+                        <label for="pb3"><span></span>风格3</label>
 
                         <input type="radio" id="pb4" name="page_builder" value="page-builder-4.html"  />
-                        <label for="pb4"><span></span>Style 4</label>
+                        <label for="pb4"><span></span>风格4</label>
                     </div>
                 </div>      
 
-                <h3 class="layouts">Page Animation</h3>
+                <h3 class="layouts">页面动画</h3>
                 <div id="show">
 
                     <select name="one" class="dropdown-select">
@@ -2233,16 +2232,16 @@
 
                 </div>
 
-                <h3 class="layouts" style="padding-top:5px">Background Style</h3>
+                <h3 class="layouts" style="padding-top:5px">背景风格</h3>
                 <div id="show">
 
                     <div class="clean-check">
 
 						<input type="radio" id="s1" name="layout" value="bg_color" checked="checked" />
-                        <label for="s1"><span></span>Color</label>
+                        <label for="s1"><span></span>颜色</label>
                         
                         <input type="radio" id="s2" name="layout" value="bg_slider" />
-                        <label for="s2"><span></span>Slider</label>
+                        <label for="s2"><span></span>滑块</label>
 
                     </div>
 
@@ -2251,7 +2250,7 @@
             </div>
 
             <div> 
-                <h3>Background Color</h3>
+                <h3>背景颜色</h3>
                 <ul class="colors-style bgsolid" id="bgsolid">
                     <li><a href="#" class="gray-bg"></a></li>
                     <li><a href="#" class="green-bg"></a></li>
@@ -2262,7 +2261,7 @@
             </div> 
 
             <div>  
-                <h3>Background Image</h3>
+                <h3>背景图</h3>
                 <ul class="colors-style bg" id="bg">
                     <li><a href="#" class="bg1"></a></li>
                     <li><a href="#" class="bg2"></a></li>
@@ -2272,7 +2271,7 @@
                 </ul>
             </div>
 
-            <div id="button-reset"><a href="#" class="button color blue boxed">Reset</a></div>
+            <div id="button-reset"><a href="#" class="button color blue boxed">重置</a></div>
         </div>
         <!-- End Switcher -->
 
